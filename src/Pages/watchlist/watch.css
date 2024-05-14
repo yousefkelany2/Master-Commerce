@@ -1,0 +1,78 @@
+.wathes{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    
+}
+.wathes .watch{
+    padding: 10px;
+    width: 30%;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    background-color: white;
+}
+.wathes .watch img{
+    width: 300px;
+    transition: var(--transit-transition);
+    height: 300px;
+}
+.wathes .watch img:hover{
+    transform: scale(1.1);
+}
+
+.wathes .watch h1{
+    margin: 10px auto !important;
+    color: var(--main-color);
+}
+.wathes .watch h2{
+    font-size: 27px;
+    color: gray;
+    margin-bottom: 20px ;
+    margin: 10px auto;
+}
+.wathes .watch span{
+   color: gray;
+}
+.btnwa{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+.btnwa .waic{
+    padding: 5px;
+    font-size: 20px;
+    
+}
+.btnwa button{
+    
+    outline: none;
+    border: none;
+    background-color: #ccc;
+    transition: var(--transit-transition);
+    color: var(--main-color);
+
+    
+}
+.btnwa  .waicon{
+    transition: var(--transit-transition);
+}
+.btnwa  .waicon:hover{
+    background-color: var(--main-color);
+    color: white;
+}
+.btnwa  .fawaicon{
+    font-weight: bold;
+    color: white;
+    background: red;
+}
+/* Start Dark  */
+.app-dark .watch{
+    background-color: #222;
+}
+.app-dark .watch .waicon:hover{
+    color: black;
+}
+/* End Dark  */

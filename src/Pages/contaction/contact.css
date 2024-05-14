@@ -1,0 +1,103 @@
+.contact{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.cata img{
+  object-fit: contain;
+}
+.contact .conL{
+    width: 65%;
+}
+.contact .conR{
+    width: 30%;
+}
+
+.contact .conL {
+  background-color: white;
+  padding: 15px;
+}
+.contact .conL input{
+  display: block;
+  padding: 15px;
+  margin: 30px;
+  width: 90%;
+  border: none;
+  outline: none;
+  border: solid 1px #ccc;
+  font-size: 15px;
+
+
+}
+.contact .conL textarea{
+  display: block;
+  padding: 15px;
+  margin: 30px;
+  width: 90%;
+  border: none;
+  outline: none;
+  border: solid 1px #ccc;
+  font-size: 15px;
+  height: 150px;
+
+}
+.contact .conL button{
+  padding: 15px;
+  margin: 30px;
+  border: none;
+  outline: none;
+  font-size: 22px;
+  background-color: var(--main-color);
+  transition: var(--transit-transition);
+  color: white;
+  border: solid 1px var(--main-color);
+
+}
+.contact .conL button:hover{
+  background-color: transparent;
+  color: var(--main-color);
+}
+.contact   .conR{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+}
+.contact   .conR .conUP{
+  width: 90%;
+  padding: 10px;
+
+  text-align: center;
+  background-color: white;
+}
+.contact   .conR .conUP iframe{
+  text-align: center;
+  margin: auto;
+  height: 200px;
+  width: 90%;
+}
+.contact   .conR .conDo{
+  background-color: white;
+  color: var(--main-color);
+  font-size: 20px;
+  padding: 15px;
+}
+.contact   .conR .conDo .iconCon{
+  display: flex;
+  align-items: center;
+  margin: 20px auto;
+  gap: 25px;
+}
+
+.contact   .conR .conDo .iconCon h3{
+  color: gray;
+}
+/* Dark */
+.app-dark .conL , .app-dark input ,.app-dark textarea{
+  background-color: #222 !important;
+  color: white;
+}
+.app-dark .conUP , .app-dark .conDo {
+  background-color: #222 !important;
+}
+/* End Dark */

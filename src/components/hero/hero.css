@@ -1,0 +1,125 @@
+.hero{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+}
+.heroL{
+    width: 65%;
+}
+.heroR{
+    width: 30%;
+}
+/* Left */
+.heroL1{
+    background-image:linear-gradient(rgba(20, 20, 20, 0.702),rgba(20, 20, 20, 0.702)), url("../../images/man.jpg") ;
+    /* background: url("../../images/man.jpg")   ; */
+    background-size: cover;
+    height: 400px;
+}
+.heroL2{
+    background-image:linear-gradient(rgba(20, 20, 20, 0.702),rgba(20, 20, 20, 0.702)), url("../../images/woman.jpg") ;
+    /* background: url("../../images/man.jpg")   ; */
+    background-size: cover;
+    height: 400px;
+}
+.heroL3{
+    background-image:linear-gradient(rgba(20, 20, 20, 0.702),rgba(20, 20, 20, 0.702)), url("../../images/kids.jpg") ;
+    /* background: url("../../images/man.jpg")   ; */
+    background-size: cover;
+    height: 400px;
+}
+.hero  .same{
+    text-align: center;
+    padding: 30px 0;
+    color: white;
+}
+.hero  .same >*{
+    margin: 20px 0;
+}
+.hero  .same h1{
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+.hero  .same p{
+    width: 80%;
+    margin: auto;
+    color: #eee;
+    font-size: 20px ;
+    line-height: 1.2;
+}
+.hero  .same button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 20px;
+    border: solid 1px white;
+    color: white;
+    padding: 10px;
+    margin-top: 30px;
+    transition: var(--transit-transition);
+}
+.hero  .same button:hover{
+    background-color: var(--main-color);
+    color: #3d464d;
+    border: solid 1px transparent;
+}
+/* Right */
+.heroR{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    color: white;
+    
+    
+}
+
+.heroup{
+    background-image:linear-gradient(rgba(20, 20, 20, 0.3),rgba(20, 20, 20, 0.52)), url("../../images/offer-1.jpg") ;
+    /* background: url("../../images/man.jpg")   ; */
+    background-size: cover;
+    height: 200px;
+}
+.herodown{
+    background-image:linear-gradient(rgba(20, 20, 20, 0.3),rgba(20, 20, 20, 0.52)), url("../../images/offer-2.jpg") ;
+    /* background: url("../../images/man.jpg")   ; */
+    background-size: cover;
+    height: 200px;
+}
+.sameR >*{
+  margin: 4px 0;
+}
+.sameR{
+    padding-top: 20px ;
+}
+
+.sameR h3{
+    font-size: 25px;
+    margin-top: 20px;
+}
+.sameR h2{
+    font-size: 25px;
+    letter-spacing: 1.5px;
+}
+.sameR  button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 18px;
+    border: solid 1px white;
+    color: white;
+    margin-top: 10px;
+    padding: 7px;
+    transition: var(--transit-transition);
+}
+.hero  .sameR button:hover{
+    background-color: var(--main-color);
+    color: #3d464d;
+    border: solid 1px transparent;
+}
+/* Dark hero start */
+.app-dark button:hover{
+color: white !important;
+}
+/* Dark hero end */

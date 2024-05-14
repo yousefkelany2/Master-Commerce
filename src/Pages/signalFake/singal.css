@@ -1,0 +1,71 @@
+.singalProducts{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.singalProducts .imagePro{
+    width: 40%;
+  
+    text-align: center;
+   
+}
+.singalProducts .imagePro img{
+    background-color: white;
+    padding: 50px;
+    object-fit: contain;
+width: 400px;
+height: 400px;
+}
+.singalProducts .detailProFd{
+    width: 50%;
+    background-color: white;
+    padding: 40px;
+}
+.singalProducts .detailProFd h1{
+    color: var(--main-color);
+}
+.singalProducts .detailProFd  .StarFD{
+    display: flex;
+    gap: 5px;
+    font-size: 23px;
+    margin: 20px 0;
+    color: gold;
+}
+.singalProducts .detailProFd  p{
+    color: gray;
+    line-height: 1.2;
+    margin: 10px;
+}
+.singalProducts .detailProFd .cart{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    border: none;
+    outline: none;
+    border: solid 1px var(--main-color);
+    font-size: 20px;
+    background-color: var(--main-color);
+    color: white;
+    transition: var(--transit-transition);
+    padding: 15px;
+}
+.singalProducts .detailProFd .cart:hover{
+    background-color: white;
+    color: var(--main-color);
+}
+/* Start Dark */
+.app-dark .imagePro{
+    background-color: black;
+}
+.app-dark .imagePro img{
+    background-color: black;
+}
+.app-dark .detailProFd{
+    background-color: #222;
+}
+.app-dark .detailProFd .cart:hover{
+  background-color: #222;
+}
+
+
+/* End Dark */

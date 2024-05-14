@@ -1,0 +1,110 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3d464d;
+    position: sticky;
+    top: 0;
+    z-index: 4;
+    padding: 7px 25px;
+}
+/* Nav Left */
+
+.navL h2{
+    color: white;
+    font-size: 35px;
+    
+}
+.navL span{
+    color: var(--main-color);
+
+}
+/* Nav middle */
+.navM ul{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 25px;
+  
+}
+.navM ul a{
+    font-size: 25px;
+    color: white;
+    transition: var(--transit-transition);
+}
+.navM ul a:hover{
+    color: var(--main-color);
+}
+.navM  ul .Fakeproducts a{
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 5px;
+}
+.navM  ul  .Fakeproducts{
+    position: relative;
+    
+}
+.navM .Fakepro{
+    position: absolute;
+    background-color: var(--main-color);
+    left: -15px;
+    top: 50px;
+    padding: 0;
+    width: max-content;
+ 
+   
+} 
+.navM .Fakepro a{
+    display: block;
+    margin: 10px 0;
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+    transition: var( --transit-transition);
+}
+.navM .Fakepro a:hover{
+    background-color:#3d464d;
+    color: var(--main-color);
+}
+.navM .Fakepro {
+    display: none;
+}
+
+/* Nav Right */
+.navR{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    color: var(--main-color);
+    
+    font-size: 20px;
+}
+.navR span{
+    color: white;
+    font-size: 17px;
+}
+.counticon{
+    color: var(--main-color);
+}
+.MOSU .ms{
+    font-size: 25px !important;
+    cursor: pointer;
+}
+.MOSU .moooon{
+    font-size: 20px !important;
+}
+.sun{
+    animation: spinner infinite 2s;
+}
+.siUp{
+    display: none;
+}
+.menu{
+    font-size: 27px !important;
+    cursor: pointer;
+}
+.MENU{
+    display: none;
+}
+/* resposive mobile Start */

@@ -1,0 +1,77 @@
+.productsF{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+
+}
+.productsF .productF{
+    width: 22%;
+    text-align: center;
+    background-color: white;
+    overflow: hidden;
+    padding: 10px;
+}
+.productsF .productF img{
+    width: 300px;
+    height: 300px;
+    transition: var(--transit-transition);
+    
+}
+.productsF .productF img:hover{
+    transform: scale(1.1);
+}
+.productsF .productF h1{
+    color: var(--main-color);
+}
+.productsF .productF .price{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.productsF .productF .price .old{
+    text-decoration: line-through;
+    color: gray;
+}
+.productsF .productF  .star{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: gold;
+    font-size: 23px;
+    margin: 10px auto;
+}
+.productsF .productF .btnF{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px auto;
+
+}
+.productsF .productF .btnF button{
+    padding: 4px;
+    font-size: 22px;
+    background-color: #ccc;
+    color: var(--main-color);
+    border: none;
+    transition: var(--transit-transition);
+
+}
+.productsF .productF .btnF button:hover{
+    background-color: var(--main-color);
+    color: white;
+}
+/* Start Dark */
+.app-dark .productF{
+    background-color: #222;
+}
+.app-dark .productF button{
+    background-color: gray;
+}
+.app-dark .productF button:hover{
+    color: black !important;
+}
+
+/* End Dark */

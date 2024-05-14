@@ -1,0 +1,81 @@
+footer{
+    padding: 5px 0 ;
+    background-color:#3d464d ;
+    color: white;
+}
+.cardsFO{
+    display: flex;
+    justify-content: space-between;
+
+}
+.cardsFO .ca{
+    width: 23%;
+    text-align: center;
+}
+h1{
+    margin-bottom: 20px;
+}
+p{
+    
+    line-height: 1.2;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.cardHO a{
+    color: white;
+    font-size: 22px;
+    margin: 3px auto;
+    transition: var(--transit-transition);
+}
+.cardHO a:hover{
+    color: var(--main-color);
+}
+.cardSO a{
+    color: white;
+    font-size: 20px;
+    transition: var(--transit-transition);
+   
+}
+.cardSO a:hover{
+    color: var(--main-color);
+}
+.cardSO li{
+    margin: 10px auto;
+}
+.inp{
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+}
+.inp input{
+   border: none;
+   outline: none;
+   padding: 10px ;
+   font-size: 15px;
+
+}
+.inp button{
+    border: none;
+    outline: none;
+    background-color: var(--main-color);
+    color: black;
+    padding: 10px;
+    transition: var(--transit-transition);
+    font-size: 15px;
+}
+.inp button:hover{
+    background-color: #ccc;
+    color: var(--main-color);
+}
+.me h3{
+    margin: 25px auto;
+    font-size: 25px;
+    text-align: center;
+}
+.me h3 a{
+  color: var(--main-color);
+  transition: var(--transit-transition);
+}
+.me h3 a:hover{
+  color: white;
+}

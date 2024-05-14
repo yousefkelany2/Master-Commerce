@@ -1,0 +1,33 @@
+.Catas{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.Catas .cata{
+    width: 22%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    border-radius: 10px;
+    padding: 15px;
+}
+.Catas .cata img{
+    width: 60px;
+    height: 60px;
+}
+
+.Catas .cata  .catatext h1{
+    font-size: 15px;
+
+}
+.Catas .cata  .catatext h3{
+    color: gray;
+}
+/* Start Dark */
+.app-dark .cata{
+    background-color: #222;
+}
+/* End Dark */

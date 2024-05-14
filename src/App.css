@@ -1,0 +1,720 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  font-family: "Tajawal", sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+  font-style: normal;
+  background-color: #eee;
+  scroll-behavior: smooth;
+}
+a{
+  text-decoration: none;
+}
+i,button{
+  cursor: pointer;
+}
+li{
+  list-style: none;
+  
+}
+:root{
+  --main-color:#fe2712;
+  --transit-transition:0.5s;
+}
+.container{
+  width: 90%;
+  margin: 80px auto;
+}
+.TittleHome{
+  text-align: center;
+  margin: 20px auto;
+  margin-bottom: 25px;
+  font-size: 25px;
+  color: var(--main-color);
+  letter-spacing: 2;
+}
+.slick-prev ,.slick-next{
+  display: none !important;
+}
+.main-tittle{
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 1.5;
+  margin-bottom: 30px;
+}
+.main-tittle span{
+  color: var(--main-color);
+}
+.main-tittle  p{
+  width: 65%;
+  margin: 0 auto;
+  line-height: 1.5;
+  color: gray;
+}
+.spinner{
+  display: block;
+ text-align: center;
+ font-size: 50px;
+ margin: 75px auto;
+ color: var(--main-color);
+ animation: infinite 1s spinner;
+}
+@keyframes spinner {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+  
+}
+.app-dark{
+  background-color: black;
+  color: white;
+}
+@media screen and (max-width : 480px) {
+  /* Start Navbar */
+  nav{
+      position: relative;
+      padding: 5px 15px;
+      align-items: center;
+      gap: 2px !important;
+  }
+  nav .navL h2{
+      font-size: 20px !important;
+  }
+  nav .MENU {
+      display: block;
+  }
+  .navM ul{
+      flex-direction: column;
+      position: absolute;
+      background-color: #CCC;
+      right: 0;
+      top:55px ;
+      width: 100%;
+      gap: 0;
+      
+  }
+  .navM ul li{
+      text-align: center;
+      margin: 2px auto ;
+      
+      width: max-content;
+      padding: 10px;
+  }
+  .navM ul li a{
+      color: black;
+   
+  }
+  .app-dark .navM ul{
+      background-color: #222;
+  }
+  .app-dark    .navM ul li a{
+      color: white;
+  }
+  nav .navM ul{
+      display: none;
+  }
+  nav .MENU  .menufa{
+      display: none;
+      cursor: pointer;
+  }
+  nav .MENU  .menutu{
+    display: block;
+    cursor: pointer;
+  }
+  /* End Navbar */
+  /* Start Hero */
+  .hero{
+    flex-direction: column;
+  }
+  .hero  .heroL{
+    width: 98%;
+  }
+   .hero .heroR{
+    width: 98%;
+   }
+   .hero  .same p{
+    width: 90%;
+   }
+  /* End Hero */
+  /* Start Order */
+  .servces{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .servces .service{
+    width: 90% !important;
+    justify-content: center;
+  }
+  /* End Order */
+  /* Start Catogory */
+  .Catas{
+    flex-direction: column;
+  }
+  .Catas .cata{
+    width: 90% !important;
+    justify-content: space-around;
+  }
+  /* End Catogory */
+
+  /* Start Feauture  */
+  .productsF{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .productsF .productF{
+    width: 95% !important;
+  }
+  /* End Feauture */
+  /* Start Footer */
+  footer  .cardsFO{
+    flex-direction: column;
+  }
+  footer .cardsFO .ca{
+    width: 90%;
+  }
+  footer  .cardSO ul{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  /* End Footer */
+  /* Start About */
+  .About{
+    flex-direction: column;
+  }
+  .About  .aboutL{
+    width: 95% !important;
+  }
+  .About .aboutR{
+    width: 95% !important;
+  }
+  .About .aboutR  button{
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+  }
+  /* End About */
+  /* Start Contact */
+  .contact{
+    flex-direction: column;
+  }
+  .contact .conL{
+    width: 95% !important;
+  }
+  .contact .conL input ,.contact .conL textarea{
+    width: 80% !important;
+  }
+  .contact .conL button{
+    display: block !important;
+    margin: 5px auto !important; 
+    text-align: center;
+  }
+  .contact .conR{
+    width: 95% !important;
+  }
+  /* End Contact */
+  /* Start Fake */
+  .main-tittle p{
+    width: 90%;
+  }
+  .main-tittle h1{
+    font-size: 40px;
+  }
+  .productsFD{
+    flex-direction: column;
+  }
+  .productsFD .productFD{
+    width: 95% !important;
+  }
+
+  /* End Fake */
+  /* Start Singal */
+  .singalProducts{
+    flex-direction: column;
+    
+  }
+  .singalProducts .imagePro{
+    width: 90% !important;
+  }
+  .singalProducts .imagePro img{
+    padding: 10px !important;
+    width: 350px !important;
+    height: 350px !important;
+    object-fit: contain;
+  }
+  .singalProducts .detailProFd{
+    width: 90% !important;
+    text-align: center;
+    padding: 15px !important;
+  }
+  .singalProducts .detailProFd  .StarFD{
+    justify-content: center;
+  }
+  .singalProducts .detailProFd .cart{
+    display: block;
+    margin: 0 auto !important;
+  }
+  /* End Singal */
+  /* Start Cart */
+  .cart{
+    flex-direction: column;
+  }
+  .cart  .products-carts{
+    width: 100% !important;
+  }
+  .cart .total{
+    width: 95% !important;
+  }
+  .product-carts{
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .product-carts button{
+    display: block;
+    margin: 0 auto;
+  }
+  /* End Cart */
+  /* Start Watch list */
+  .wathes{
+    flex-direction: column;
+  }
+  .wathes .watch{
+    width: 95% !important;
+  }
+  /* End Watch list */
+}
+@media screen and (min-width : 481px) and (max-width : 770px){
+    /* Start Navbar */
+    nav{
+      position: relative;
+      padding: 5px 15px;
+      align-items: center;
+      gap: 2px !important;
+  }
+  nav .navL h2{
+      font-size: 27px !important;
+  }
+  nav .MENU {
+      display: block;
+  }
+  .navM ul{
+      flex-direction: column;
+      position: absolute;
+      background-color: #CCC;
+      right: 0;
+      top:55px ;
+      width: 100%;
+      gap: 0;
+      
+  }
+  .navM ul li{
+      text-align: center;
+      margin: 2px auto ;
+      
+      width: max-content;
+      padding: 10px;
+  }
+  .navM ul li a{
+      color: black;
+   
+  }
+  .app-dark .navM ul{
+      background-color: #222;
+  }
+  .app-dark    .navM ul li a{
+      color: white;
+  }
+  nav .navM ul{
+      display: none;
+  }
+  nav .MENU  .menufa{
+      display: none;
+      cursor: pointer;
+  }
+  nav .MENU  .menutu{
+    display: block;
+    cursor: pointer;
+  }
+  /* End Navbar */
+  /* Start Hero */
+  .hero{
+    flex-direction: column;
+  }
+  .hero  .heroL{
+    width: 98%;
+  }
+   .hero .heroR{
+    width: 98%;
+   }
+   .hero  .same p{
+    width: 90%;
+   }
+   .heroR {
+    flex-direction: row !important;
+   }
+   .heroup,.herodown{
+    width: 50%;
+   }
+  /* End Hero */
+  /* Start Order */
+  .servces{
+    flex-wrap: wrap;
+  }
+  .servces .service{
+    width: 40% !important;
+    justify-content: center;
+    gap: 20px;
+    margin: 10px auto;
+  }
+  /* End Order */
+  /* Start Catogory */
+  
+  .Catas .cata{
+    width: 45% !important;
+    justify-content: space-around;
+  }
+  /* End Catogory */
+
+  /* Start Feauture  */
+  
+  .productsF .productF{
+    width: 44% !important;
+  }
+  /* End Feauture */
+  /* Start Footer */
+  footer  .cardsFO{
+    flex-wrap: wrap;
+  }
+  footer .cardsFO .ca{
+    width: 48%;
+  }
+ 
+  /* End Footer */
+  /* Start About */
+  .About{
+    flex-direction: column;
+  }
+  .About  .aboutL{
+    width: 95% !important;
+  }
+  .About .aboutR{
+    width: 95% !important;
+  }
+  .About .aboutR  button{
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+  }
+  /* End About */
+  /* Start Contact */
+  .contact{
+    flex-direction: column;
+  }
+  .contact .conL{
+    width: 95% !important;
+  }
+  .contact .conL input ,.contact .conL textarea{
+    width: 80% !important;
+  }
+  .contact .conL button{
+    display: block !important;
+    margin: 5px auto !important; 
+    text-align: center;
+  }
+  .contact .conR{
+    width: 95% !important;
+  }
+  /* End Contact */
+  /* Start Fake */
+  .main-tittle p{
+    width: 90%;
+  }
+  .main-tittle h1{
+    font-size: 40px;
+  }
+  .productsFD{
+   flex-wrap: wrap;
+  }
+  .productsFD .productFD{
+    width: 43% !important;
+  }
+
+  /* End Fake */
+  /* Start Singal */
+  .singalProducts{
+    flex-direction: column;
+    
+  }
+  .singalProducts .imagePro{
+    width: 90% !important;
+  }
+  .singalProducts .imagePro img{
+    padding: 10px !important;
+    width: 350px !important;
+    height: 350px !important;
+    object-fit: contain;
+  }
+  .singalProducts .detailProFd{
+    width: 90% !important;
+    text-align: center;
+    padding: 15px !important;
+  }
+  .singalProducts .detailProFd  .StarFD{
+    justify-content: center;
+  }
+  .singalProducts .detailProFd .cart{
+    display: block;
+    display: flex ;
+    width: max-content;
+    margin: 0 auto !important;
+  }
+  /* End Singal */
+  /* Start Cart */
+  .cart{
+    flex-direction: column;
+  }
+  .cart  .products-carts{
+    width: 100% !important;
+  }
+  .cart .total{
+    width: 95% !important;
+  }
+  .product-carts{
+    width: 100%;
+   
+  }
+  
+  /* End Cart */
+  /* Start Watch list */
+  
+  .wathes .watch{
+    width: 44% !important;
+  }
+  /* End Watch list */
+
+}
+@media screen and (min-width : 771px) and (max-width : 1100px){
+      /* Start Navbar */
+      nav{
+        position: relative;
+        padding: 5px 15px;
+        align-items: center;
+        gap: 2px !important;
+    }
+    nav .navL h2{
+        font-size: 27px !important;
+    }
+    nav .MENU {
+        display: block;
+    }
+    .navM ul{
+        flex-direction: column;
+        position: absolute;
+        background-color: #CCC;
+        right: 0;
+        top:55px ;
+        width: 100%;
+        gap: 0;
+        
+    }
+    .navM ul li{
+        text-align: center;
+        margin: 2px auto ;
+        
+        width: max-content;
+        padding: 10px;
+    }
+    .navM ul li a{
+        color: black;
+     
+    }
+    .app-dark .navM ul{
+        background-color: #222;
+    }
+    .app-dark    .navM ul li a{
+        color: white;
+    }
+    nav .navM ul{
+        display: none;
+    }
+    nav .MENU  .menufa{
+        display: none;
+        cursor: pointer;
+    }
+    nav .MENU  .menutu{
+      display: block;
+      cursor: pointer;
+    }
+    /* End Navbar */
+    /* Start Hero */
+    .hero{
+      flex-direction: column;
+    }
+    .hero  .heroL{
+      width: 98%;
+    }
+     .hero .heroR{
+      width: 98%;
+     }
+     .hero  .same p{
+      width: 90%;
+     }
+     .heroR {
+      flex-direction: row !important;
+     }
+     .heroup,.herodown{
+      width: 50%;
+     }
+    /* End Hero */
+    /* Start Order */
+    .servces{
+      flex-wrap: wrap;
+    }
+    .servces .service{
+      width: 40% !important;
+      justify-content: center;
+      gap: 20px;
+      margin: 10px auto;
+    }
+    /* End Order */
+    /* Start Catogory */
+    
+    .Catas .cata{
+      width: 45% !important;
+      justify-content: space-around;
+    }
+    /* End Catogory */
+  
+    /* Start Feauture  */
+    
+    .productsF .productF{
+      width: 44% !important;
+    }
+    /* End Feauture */
+    /* Start Footer */
+    footer  .cardsFO{
+      flex-wrap: wrap;
+    }
+    footer .cardsFO .ca{
+      width: 48%;
+    }
+   
+    /* End Footer */
+    /* Start About */
+    .About{
+      flex-direction: column;
+    }
+    .About  .aboutL{
+      width: 95% !important;
+    }
+    .About .aboutR{
+      width: 95% !important;
+    }
+    .About .aboutR  button{
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+    }
+    /* End About */
+    /* Start Contact */
+    .contact{
+      flex-direction: column;
+    }
+    .contact .conL{
+      width: 95% !important;
+    }
+    .contact .conL input ,.contact .conL textarea{
+      width: 80% !important;
+    }
+    .contact .conL button{
+      display: block !important;
+      margin: 5px auto !important; 
+      text-align: center;
+    }
+    .contact .conR{
+      width: 100% !important;
+      display: flex;
+      flex-direction: row !important; 
+    }
+    .contact .conR .conUP{
+      width: 45% !important;
+    }
+    .contact .conR .conDo{
+      width: 45% !important;
+    }
+    /* End Contact */
+    /* Start Fake */
+    .main-tittle p{
+      width: 90%;
+    }
+    .main-tittle h1{
+      font-size: 40px;
+    }
+    .productsFD{
+     flex-wrap: wrap;
+    }
+    .productsFD .productFD{
+      width: 43% !important;
+    }
+  
+    /* End Fake */
+    /* Start Singal */
+    .singalProducts{
+      flex-direction: column;
+      
+    }
+    .singalProducts .imagePro{
+      width: 90% !important;
+    }
+    .singalProducts .imagePro img{
+      padding: 10px !important;
+      width: 350px !important;
+      height: 350px !important;
+      object-fit: contain;
+    }
+    .singalProducts .detailProFd{
+      width: 90% !important;
+      text-align: center;
+      padding: 15px !important;
+    }
+    .singalProducts .detailProFd  .StarFD{
+      justify-content: center;
+    }
+    .singalProducts .detailProFd .cart{
+      display: block;
+      display: flex ;
+      width: max-content;
+      margin: 0 auto !important;
+    }
+    /* End Singal */
+    /* Start Cart */
+    .cart{
+      flex-direction: column;
+    }
+    .cart  .products-carts{
+      width: 100% !important;
+    }
+    .cart .total{
+      width: 95% !important;
+    }
+    .product-carts{
+      width: 100%;
+     
+    }
+    
+    /* End Cart */
+    /* Start Watch list */
+    
+    .wathes .watch{
+      width: 44% !important;
+    }
+    /* End Watch list */
+  
+}
+/* resposive mobile End */
